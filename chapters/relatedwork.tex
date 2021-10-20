@@ -1,0 +1,64 @@
+\section{Related Work}
+\label{sec: relatedworks}
+
+
+Historically, buildings were not designed to cater to forms of ambient intelligence rather optimized spatially for acceptable levels of thermal comfort, indoor ventilation, and privacy.
+With the passage of time, building became a composite of observable and controllable elements.
+
+
+% Cheap availability of sensors has spurred ad-hoc incorporation into zones of a buildings. 
+% It is not clear from the literature which spaces need sensors and what are the zones one can save up on installation cost. 
+% The context stems from studying the gaps in smart building literature and industry focusing on the three major pain points of such technology.
+
+% This essence of distributed computing is naturally evolves from  embedded systems scattered across spaces in such a building. 
+
+
+\subsection{Review of Technology Acceptance}
+
+
+ 
+ Smart applications \cite{wong2005intelligent} for buildings has been developed mainly for monitoring, analysis, and control of thermal units like Heating Ventilation Air Conditioning (HVAC) units, illumination channels etc.
+ A 2019 review \cite{jia2019adopting} of the smart building industry states the major pain points towards technological adaption.
+ High installation costs, obscurity on data storage policies, and privacy concerns impede the acceptance \cite{hojjati2016evaluation} of Internet of Things in buildings.
+Typically a smart building applications thrive on real time sensor data for monitoring or actuation.
+Research shows that analysing sensor streams can reveal sensitive patterns about occupancy \cite{garg2000smart} or usage.
+Consequently, privacy becomes a major concern for occupants in a building due to a non zero possibility of data leak. 
+The cost  of constructing \cite{ma2017business} a smart building is usually 1.2-1.8 times a non-smart counterpart.
+This initial capital poses the second barrier for a stake holder \cite{xu2019platform} to overcome before system installation.
+But before a technical deployment \cite{ma2016market}, the smart solution needs go through a pre-evaluation stage before finalizing the bill of materials.
+
+We add to the literature a methodology for pre-integration, and initial planning with a market segmentation analysis. 
+The motivation for a minimalist sensor design aids to non-intrusive sensing that can either be ad-hocly assembled or composed with industrial grade sensors.
+The proposed system optimises logical grouping that encodes a human-interpretable data sharing policy.
+
+% within the clarity on the data sharing policy, we encode t
+% Not everywhere there may be a pressing need to install industrial grade sensors  a mix of Do It Yourself 
+% with a focus to lower the capital and operating cost of a generic building solution. 
+% The solution gives a business alternative to the classical fix and forget strategy of distributing sensors.
+% We perform a market segmentation of sensing to 
+
+
+
+
+\subsection{Ambient Intelligence}
+
+Multiple cyber physical systems like sensors and actuators work in cohesion to maintain a desired quality of ambience and indoor comfort of a building.
+Some examples of non-intrusive ambient sensors are temperature, humidity, luminosity.
+Data values recorded by a type of sensor is usually dissimilar across different buildings or between separate zones in a building.
+Empirical Mode Decomposition (EMD) \cite{fontugne2012empirical} of a continuous variable such as temperature, humidity or luminosity yields Intrinsic Mode Functions (IMF)\cite{ayenu2010criterion}.
+This has been shown useful for structural health monitoring  \cite{barbosh2020empirical} for buildings.
+K means clustering over the space of IMF for all the sensors is shown to be effective \cite{hong2013towards} in identifying non identical sensors.
+This approach is further extended \cite{YOGANATHAN20181206}  by using information loss to eliminate weak candidate points from a cluster to obtain a solution to the Optimal Sensor Location Problem (OSLP).
+A key experimental insight of OSLP  is that there can be more than one group, which are not worse from one another or Pareto Optimal \cite{censor1977pareto} in nature.
+
+We broaden the scope of the OSLP to find the minimal support sensors that can predict the redundant sensor values. 
+The aim here is to generate a virtual sensor field for a building that is spatially optimised to have the least generalization error in prediction. 
+For example, the behaviour of a group of temperature sensors situated across multiple zones probably can be learnt by an optimal fraction of embedded devices. 
+Noticeably the energy footprint in powering up all sensors is higher than a fraction of the same.
+% This opens up the scope for a dynamic optimization where primal objectives should be on lowering the capital and operating cost, controllable enhancement of privacy by design while maintaining a fair level of accuracy
+% Although it is clear from the literature about existing techniques to find optimal locations, to create a generalized 
+%  The optimal sensor placement problem  uses this solution to identify significant locations in a building to place sensors. 
+
+% We define a virtual field as an approximation of temperature, humidity and luminosity sensors and control channels the illumination power and ambient power.
+% The target of such systems is to maintain indoor comfort which is generally modelled as the net deviation from desired set points of the control channels.
+
